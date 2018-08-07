@@ -5,18 +5,6 @@ from chatterbot.logic import LowConfidenceAdapter
 
 from chatterbot.response_selection import get_random_response
 
-#importing flask to use this library
-#from flask import Flask
-
-#chatui = Flask(__name__)
-
-#@chatui.route('/')
-#def display():
- #   return 'Hi this is RJ'
-
-#if __name__=='__main__':
- #   chatui.run(debug = True)
-
 #importing the chatbot
 from chatterbot import ChatBot
 
@@ -24,7 +12,7 @@ from chatterbot import ChatBot
 import os
 
 #Creating the  instance of the leo
-leo=ChatBot('Leo',#read_only=True,
+leo=ChatBot('Leo',read_only=True,
                 logic_adapters=[
                 {
                     'import_path': 'chatterbot.logic.BestMatch'
