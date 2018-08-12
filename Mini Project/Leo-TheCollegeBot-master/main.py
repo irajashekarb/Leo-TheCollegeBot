@@ -1,3 +1,13 @@
+from tkinter import *
+import tkinter as tk
+
+chat_window = Tk()
+chat_window.title("Hitam Bot")
+chat_window.mainloop()
+
+
+
+
 #importing the listtrainer
 from chatterbot.trainers import ListTrainer
 
